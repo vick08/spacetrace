@@ -16,7 +16,7 @@ It uses measurements of how sound reaches the ears from different directions to 
 
 ### macOS
 
-1. Download **SpaceTrace_1.0.1_macOS_Universal.dmg** from the release page and open it. It runs on Apple silicon and Intel Macs with macOS 12 or later.
+1. Download [**SpaceTrace_1.0.1_macOS_Universal.dmg**](https://github.com/vick08/spacetrace/releases/download/v1.0.1-macos-preview/SpaceTrace_1.0.1_macOS_Universal.dmg) from the [macOS preview release](https://github.com/vick08/spacetrace/releases/tag/v1.0.1-macos-preview) and open it. This is a preview for testing. It runs on Apple silicon and Intel Macs with macOS 12 or later.
 2. Open **Install SpaceTrace.pkg**. If macOS cannot verify the developer, choose Open Anyway in System Settings > Privacy & Security, then follow the installer. It installs the Audio Unit, VST3 and CLAP plug-ins; each carries its own heads, so deleting a plug-in uninstalls it. The disk image also holds the manual, custom-head tools and licences.
 3. Rescan plug-ins, then insert **SpaceTrace** on an audio track. Logic Pro and GarageBand use the Audio Unit.
 
