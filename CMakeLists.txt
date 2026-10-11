@@ -84,8 +84,10 @@ if(SPACETRACE_BUILD_TESTS)
 endif()
 
 if(SPACETRACE_BUILD_PLUGIN)
-    # JUCE and the CLAP wrapper compile C sources with clang.
-    enable_language(C)
+    # The CLAP wrapper compiles C sources with clang on macOS.
+    if(APPLE)
+        enable_language(C)
+    endif()
     if(EXISTS "${JUCE_DIR}/CMakeLists.txt")
         add_subdirectory("${JUCE_DIR}" "${CMAKE_BINARY_DIR}/JUCE" EXCLUDE_FROM_ALL)
     else()
